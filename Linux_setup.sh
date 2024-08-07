@@ -2,11 +2,6 @@
 
 echo "  This script is made by CyberZest and modified by b0xH34D"
 
-sudo apt install default-jdk
-update-alternatives --config java
-echo 'JAVA_HOME="/lib/jvm/java-11-openjdk-amd64/bin/java"' | sudo tee -a /etc/environment
-source /etc/environment
-
 if [[ $EUID -eq 0 ]]; then
     # Download Burp Suite Profesional Latet Version
     echo 'Downloading Burp Suite Professional ....'
